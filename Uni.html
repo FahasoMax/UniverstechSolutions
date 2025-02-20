@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<!-- Site créé entièrement avec bloc-notes  -->
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fahasoavana MH</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&family=Open+Sans&family=Montserrat&display=swap">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+
+
+
+<header>
+	<div id="Logotype"> <!-- début logotype -->
+		<img src="https://i.ibb.co/Jj6h90Nx/logotype.jpg" alt="logotype" id="logotype"/>
+	</div> <!-- Fin logotype -->
+	<div id="headnav">
+	<div id="accueil"><a href="Uni.html">Accueil</a></div>
+	<div id="Services"><a href="Uni_services.html">Services</a></div>
+	<div id="Vente">À propos</div>
+	<div id="Blog">Blog</div>
+	<div id="Contact">Contact</div>
+	</div>
+</header>
+
+
+
+
+<section>
+	<article id="First_line_text">
+		<div class="Avantages">
+		<div class="animation1">
+		Rapidité
+		</div>
+		<div class="animation2">
+		Efficacité
+		</div>
+		<div class="animation3">
+		Expertise
+		</div>
+		</div>
+	</article>
+	<article id="Illustration1">
+		<img src="image1.jpg" id="first-illu"></img>
+		<div class="note-image"><div id="note-image"><span class="reve">Rêvez grand,</span><br/><span class="real">Réalisez à petit prix.</span></div>
+                                               <div id="texte_deco"><span class="real">Donnez vie </span><span class="reve">à vos rêves,</span><br/><span class="real"> sans compromis sur votre budget.</span></div></div>
+		
+	</article>
+	<div class="container">
+		<div class="Service_list" style="display: none;">Création Site Web sur mesure</div>
+		<div class="Service_list" style="display: none;">Installation, Maintenance, Réparation de votre PC</div>
+		<div class="Service_list" style="display: none;">Développement de solutions d'audiovisuelles interactives</div>
+	</div>
+
+</section>
+
+
+
+
+
+<section>
+	<div class="suite">
+		<div class="Serv" style="display: none;">Création Site Web sur mesure</div>
+		<div class="_list" style="display: none;">Installation, Maintenance, Réparation de votre PC</div>
+		<div class="_list" style="display: none;">Développement de solutions d'audiovisuelles interactives</div>
+	</div>
+</section>
+
+
+
+
+  <div class="clock"  style="display : none ;">
+    <p id="datetime"></p>
+  </div>
+  <div class="countdown" style="display : none ;">
+    <p id="countdown-timer"></p>
+  </div>
+
+
+
+
+
+<footer>
+
+  <div class="foot_note">
+	<div id="contact_bande">
+    	<div class="Contact1">Contact : fahasoavanamh@gmail.com</div>
+    	<div class="Contact2">Facebook : UnivesTech Solutions</div>
+    	<div class="Contact3">Téléphone : 038 54 430 54</div>
+	</div>
+    <div class="CopyR"><p>© 2025 Tous droits réservés. UniversTech Solutions</p></div>
+ 
+  </div>
+
+</footer>
+
+
+
+
+
+<script>
+
+
+const services = document.querySelectorAll('.Service_list');
+let index = 0;
+
+function showHide() {
+  services.forEach((service, i) => {
+    if (i === index) {
+      service.style.display = 'flex';
+      service.style.opacity = 1;
+    } else {
+      service.style.display = 'none';
+      service.style.opacity = 0;
+    }
+  });
+
+  index++;
+  if (index >= services.length) {
+    index = 0;
+  }
+
+  setTimeout(showHide, 1500); 
+}
+
+showHide();
+
+
+
+
+
+
+
+
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

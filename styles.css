@@ -1,0 +1,296 @@
+/*Ajout de tous les keyframes */
+
+
+@keyframes blink {
+    50% { opacity: 0; }
+}
+
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes marquee {
+  0% { transform: translateX(-10%); }
+  50% { transform: translateX(20%); }
+}
+
+@keyframes diagonalMarquee {
+  0% { transform: translateX(70%) translateY(-70%); }
+  20% { transform: translateX(-10%) translateY(10%); }
+}
+
+
+
+/* début propriété */
+
+html {
+    height: -webkit-fill-available;
+    background: aliceblue;
+    width: max-content;
+    border: solid;
+    border-color: #ffffff;
+    border-radius: 5px;
+}
+
+body {
+    background-color: #336699;
+    width: 45em;
+}
+
+div#Logotype {
+    float : left ;
+}
+img#logotype {
+    width: 60px;
+    border-radius: 30px;
+}
+
+div#headnav {
+    display: inline-flex;
+    margin-left: 10em;
+}
+
+div#accueil, div#Services, div#Vente, div#Blog, div#Contact {
+    border-radius: 6px;
+    background-color: #24426a;
+    font: menu;
+    padding: 0.2em;
+    margin-right: 0.5em;
+    color: #ffffff;
+    font-size: large;
+    width: 73px;
+    text-align: center;
+}
+
+.ligne, div#ligne2 {
+    font: icon;
+    color: #ccced6;
+    font-palette: light;
+    font-optical-sizing: auto;
+    border-radius: 5px;
+    padding: 0.01em;
+    margin-top: 0.5em;
+    text-shadow: 0 0 0px #f5ff00;
+    font-family: 'Montserrat', sans-serif;
+}
+div#ligne2 {
+    margin: 1.5em 0em 0em -4em;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+section {
+    background-color:#336699;
+}
+
+
+
+/* Entête avec animation*/
+
+.Avantages {
+  margin-top: 0.2em;
+  display: flex;
+  width: -webkit-fill-available;
+  animation : diagonalMarquee 5s linear,  blink 20s infinite;
+}
+.animation1{
+  overflow: hidden;
+  white-space: nowrap;
+  animation: marquee 0.3s linear, blink 5s infinite ;
+}
+.animation2{
+  overflow: hidden;
+  white-space: nowrap;
+  animation: marquee 1s linear ;
+}
+ .animation3 {
+  overflow: hidden;
+  white-space: nowrap;
+  animation: marquee 0.4s linear ;
+}
+
+.animation1 {
+    width: 34%;
+}
+.animation2 {
+    width: 33%;
+}
+.animation3 {
+    width: 33%;
+}
+.animation1, .animation2 , .animation3 {
+    color: white;
+    background-color: #336699;
+    text-align: -webkit-center;
+    border-radius: 4px
+}
+
+
+/* Image et ses alentours */
+
+img#first-illu {
+    width: 60%;
+}
+article#Illustration1 {
+    display: flex;
+}
+
+span.reve {
+    font-size: larger;
+    color: white;
+}
+span.real {
+    font-size: smaller;
+    color: white;
+}
+
+
+div#texte_deco, div#note-image {
+    margin-top: 58px;
+}
+
+
+
+.container {
+    margin-top: 80px;
+}
+
+.Service_list {
+    font-family: 'Montserrat', sans-serif;
+    font-size: larger;
+    margin-left: 18px;
+    padding: 0.3%;
+    border-radius: 10px;
+    background-color: #336699;
+    margin-top: -13em;
+    position: absolute;
+    color: #f9f9fe;
+    text-shadow: 0px 1px 2px #000000;
+    transition: opacity 0.5s linear;
+}
+
+
+section.service_section {
+    place-items: center;
+    margin-top: 3em;
+    background-color: #336699;
+}
+
+.ligne_1_section {
+    display: flex;
+}
+
+.service_propose1, .service_propose2,.service_propose3,.service_propose4   {
+background-color: #000080;
+    width: 20em;
+    height: 20em;
+    margin: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer.foot-service {
+    margin-top: 1em;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+
+
+
+
+
+
+
+
+
+
+div#contact_bande {
+    display: flex;
+    text-align: center;
+
+}
+
+
+.Contact1 {
+    width: 39%;
+}
+.Contact2 {
+    width: 35%;
+}
+.Contact3 {
+    width: 28%;
+}
+
+
+
+.Contact1, .Contact2, .Contact3 {
+    background-color: #f2f2f2;
+    border-right: solid;
+    border-width: 1px;
+    font-size: small;
+
+    color: #24426a;
+}
+
+.CopyR {
+    place-self: center;
+    font-size: smaller;
+    color: #f2f2f2;
+}
+
+
+
+p.phrase1 {
+    margin-top: 15em;
+    color: #ffffff;
+    text-align: -webkit-center;
+    font-size: large;
+    font-family: 'Montserrat';
+}
+
+.service_propose1{
+    background-image: url(https://i.ibb.co/r2dsn0hz/xptz.jpg);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+}
+.service_propose2 {
+    background-image: url(https://i.ibb.co/dJGXrkfh/solutionenmain.png);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+}
+.service_propose3 {
+    background-image: url(https://i.ibb.co/DP3JY7nc/solutionenmain.png);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+}
+
+.service_propose4 {
+    background-image: url(https://i.ibb.co/3mSqKGYg/unique.jpg);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+}
