@@ -38,9 +38,10 @@ html {
     border-radius: 5px;
 }
 
+
 body {
     background-color: #336699;
-    width: 45em;
+    width: max-content;
 }
 
 div#Logotype {
